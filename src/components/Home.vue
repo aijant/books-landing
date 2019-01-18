@@ -2,15 +2,14 @@
   <div class="hello">
     <div class="header">
     <h1>{{ content.overview }}</h1>
-     <!--<img alt="Vue logo" src="../assets/pic.png">-->
+     <img alt="Vue logo" src="../assets/pic.png">
      <span>{{ content.text1 }}</span>
    <div class="btns-row">
       <button class="btn" > view more </button>
-      <button class="video"><video src=""> video tour </video></button>
+      <button class="video"><a href="https://www.youtube.com/watch?v=x4Xh4ruKtfw">video</a></button>
    </div>
     </div>
 <div class="content">
-  <form><button class="btn" ></button></form>
    <h2>{{content.text2}}</h2>
    <h4>{{content.text3}}</h4>
   </div>
@@ -43,69 +42,90 @@ export default {
 
 
 h1 { 
-     padding-top: 20px;
-     width: 1879px;
-     padding-left:50px;
-     height: 640px;
-     background-image:url("../assets/pic.png");
-     color:#FFF;
+     width: -1px;
+     height: 5px;
+    /* background-image:url("../assets/pic.png");*/
+     color:rgb(26, 24, 24);
      font-family:Arial, Helvetica, sans-serif;
-     font-size:30px;  
+     font-size:30px;
+     
 }
 .header span {
-    font-size:12px;
-  }
-.btn {
-    width: 68px;
-    height: 10px;
-    color: #ffffff;
-    font-family: "Quattrocento Sans";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 28px;
-    text-transform: uppercase;
-}
-.video {
-     width: 72px;
-     height: 10px;
-     color: #ffffff;
-     font-family: "Quattrocento Sans";
-     font-size: 14px;
-     font-weight: 700;
-     line-height: 28px;
-     text-transform: uppercase;
+     font-family: inherit;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 54px;
+     color: rgb(12, 11, 11);
+   }
+
+.btn{
+	   width: 156px;
+	   height: 56px;
+	   border: 0px solid #85b1cc;
+	   display: inline-block;
+	   margin-right: 7px;
+	   vertical-align: top;
+	   text-align: center;
+	   line-height: 11px;
+	   text-decoration: none;
+	   color: white;
+	   border-radius: 3px;
+     box-shadow:2px 8px 6px 0px rgba(109, 50, 77, 0.65);
+     text-shadow: 4px 4px 15px rgb(16, 85, 76);
+     background: #7e2c9e; 
+     background: -moz-linear-gradient(top, #3c4a63 29%, #2c539e 44%, #2c539e 84%, #2c539e 100%); 
+     background: -webkit-linear-gradient(top, #2c539e 29%,#2c539e 44%,#2c539e 84%,#2c539e 100%); 
+     background: linear-gradient(to bottom, #2c539e 29%,#2c539e 44%,#2c539e 84%,#2c539e 100%); 
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 );
 }
 
-.content {
-     width: 720px;
-     height: 310px;
+.btn:hover{
+	   background: #45484d; 
+     background: -moz-linear-gradient(top, #45484d 0%, #63579b 100%);
+     background: -webkit-linear-gradient(top, #45484d 0%,#63579b 100%); 
+     background: linear-gradient(to bottom, #45484d 0%, #63579b 100%); 
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
 }
-form {
-     width: 10px;
-     height: 35px;
-     background-color: #e1e6ea;
+	
+.btn:active{
+     box-shadow:2px 8px 6px 0px rgba(109, 50, 77, 0.65);
+
 }
-h2 {
-     width: 258px;
-     height: 26px;
-     color: #292f36;
-     font-family: "Quattrocento Sans";
-     font-size: 36px;
-     font-weight: 700;
-     line-height: 42px;
-     text-transform: uppercase;
+
+.video{
+    	width: 156px;
+	    height: 56px;
+	    border: 0px solid #85b1cc;
+	    display: inline-block;
+	    margin-right: 7px;
+	    vertical-align: top;
+	    text-align: center;
+      line-height: 11px;
+	    text-decoration: none;
+	    color: white;
+	    border-radius: 3px;
+      box-shadow:2px 8px 6px 0px rgba(109, 50, 77, 0.65);
+      text-shadow: 4px 4px 15px rgb(16, 85, 76);
+      background: #7e2c9e; 
+      background: -moz-linear-gradient(top, #3c4a63 29%, #2c539e 44%, #2c539e 84%, #2c539e 100%); 
+      background: -webkit-linear-gradient(top, #2c539e 29%,#2c539e 44%,#2c539e 84%,#2c539e 100%); 
+      background: linear-gradient(to bottom, #2c539e 29%,#2c539e 44%,#2c539e 84%,#2c539e 100%); 
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 );
 }
-h4 {
-     width: 649px;
-     height: 222px;
-     color: #8d8f92;
-     font-family: "Open Sans";
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 26px;
-     font-family: "Open Sans";
-     font-family: "Open Sans - Bold";
-     font-weight: 700;
+
+.video:hover{
+	   background: #45484d; 
+     background: -moz-linear-gradient(top, #45484d 0%, #63579b 100%);
+     background: -webkit-linear-gradient(top, #45484d 0%,#63579b 100%); 
+     background: linear-gradient(to bottom, #45484d 0%, #63579b 100%); 
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
 }
+	
+.video:active{
+     box-shadow:2px 8px 6px 0px rgba(109, 50, 77, 0.65);
+
+}
+
+
 </style>
  
