@@ -1,12 +1,12 @@
 {
-  "name": "books-landing",
+  "name": "book",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "unit": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "dependencies": {
     "vue": "^2.5.21"
@@ -16,14 +16,9 @@
     "@vue/cli-plugin-eslint": "^3.1.1",
     "@vue/cli-service": "^3.1.1",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "jest": "^23.6.0",
-    "vue-jest": "^3.0.2",
-    "vue-template-compiler": "^2.5.21",
-    "vue-test-utils": "^1.0.0-beta.11"
+    "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
     "root": true,
@@ -48,16 +43,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "vue"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-    }
-  }
+  ]
 }
