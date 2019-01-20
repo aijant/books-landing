@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import Home from '../Home.vue'
+import { shallowMount } from '@vue/test-utils'
+import Home from '@/components/Home.vue'
 
 describe('Home', () => {
     // Проверка опций компонента
