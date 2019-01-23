@@ -1,36 +1,63 @@
+<!-- <template>
+ <div class='carousel'>
+         <carousel class="carousel-slider" 
+
+           v-for="(item) in items"
+          :key="item">
+        <div>
+          <div class="slide__img" :style="{'background-image': `url(${item.img})`}"></div>
+        </div>
+        <div class="slide__text-block">
+          <div class="slide__title">{{ item.alt }}</div>
+        </div>
+      
+         </carousel>
+   
+    <div class='carousel-controls'>
+      <button class='carousel-controls__button'>prev</button>
+      <button class='carousel-controls__button'>next</button>
+    </div>
+  </div>
+</template>   
+-->
+
+
 <template>
-  <div class="hello">
-    <div class="content">
-      <h1>{{ content.overview }}</h1>
-      <span>{{ content.text1 }}</span>
-   <!-- <div class="btns-row">
-     <button class="btn" > view more </button>
-     <button class="video">
-       <a href="https://www.youtube.com/watch?v=x4Xh4ruKtfw">video</a>
-     </button>
-   </div> -->
-   </div>
- <carousel :items="carouselItem"/>
-   </div>
+  <div class="custom-carousel">
+    <carousel
+      :perPage="1">
+      <slide
+        v-for="(item, index) in items"
+        :key="index"
+        class="slide">
+        <div>
+          <div class="slide__img" :style="{'background-image': `url(${item.img})`}"></div>
+          <div class="slide__block">
+            <div class="container">
+              <div class="slide__text-block">
+                <div class="slide__title">{{ item.alt }}</div>
+                <div class="btns-row">
+                  <button class="btn" > view more </button>
+                  <button class="video">
+                    <a href="https://www.youtube.com/watch?v=x4Xh4ruKtfw">video</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </slide>
+    </carousel>
+  </div>
 </template>
 
 <script>
-import languageHelper from "../languages/de.js"
-import Carousel from "./Carousel.vue"
-
+import { Carousel, Slide } from 'vue-carousel'
 export default {
-  name: 'Home',
-    components: { 
-      Carousel
-    },
-  created(){
-    this.setText(languageHelper.getHomeText())
-  },
-  data(){
+  data () {
     return {
-      content: {},
-      carouselItem: [
-        {
+      items: [
+         {
           // img:require('../assets/carousel/flower.jpg'),
           img: '../assets/carousel/flower.jpg',
           alt: "Hi Hello"
@@ -48,31 +75,17 @@ export default {
       ]
     }
   },
-  methods:{
-    setText(data){
-      this.content = data
-    }
+  components: {
+    Carousel,
+    Slide
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1 { 
-  width: -1px;
-  height: 5px;
-  /* background-image:url("../assets/pic.png");*/
-  color:rgb(26, 24, 24);
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:30px;
-
-}
- span {
-  font-family: inherit;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 54px;
-  color: rgb(12, 11, 11);
+<style scoped>  
+.carousel{
+  width: 1200px;
 }
 
 .btn {
@@ -141,4 +154,3 @@ getHomeText
   box-shadow:2px 8px 6px 0px rgba(109, 50, 77, 0.65);
 }
 </style>
- 
