@@ -3,14 +3,14 @@
     <div class="content">
       <h1>{{ content.overview }}</h1>
       <span>{{ content.text1 }}</span>
-   <!-- <div class="btns-row">
+   <!--<div class="btns-row">
      <button class="btn" > view more </button>
      <button class="video">
        <a href="https://www.youtube.com/watch?v=x4Xh4ruKtfw">video</a>
      </button>
    </div> -->
    </div>
- <carousel :items="carouselItem"/>
+ <carousel/>
    </div>
 </template>
 
@@ -29,24 +29,8 @@ export default {
   data(){
     return {
       content: {},
-      carouselItem: [
-        {
-          // img:require('../assets/carousel/flower.jpg'),
-          img: '../assets/carousel/flower.jpg',
-          alt: "Hi Hello"
-        },
-        {
-          // img: require('../assets/carousel/Bibliothek.jpg'),
-          img: '../assets/carousel/flower.jpg',
-          alt: "Hi Hello"
-          },
-        {
-          // img: require('../assets/carousel/history.jpg'),
-          img: '../assets/carousel/flower.jpg',
-          alt: "Hi Hello"
-        }
-      ]
-    }
+   
+   }
   },
   methods:{
     setText(data){
