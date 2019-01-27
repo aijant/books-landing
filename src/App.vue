@@ -3,6 +3,7 @@
     <Header/>
     <Home/>
     <About/>
+    <Team/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Home from './components/Home.vue'
 import Header from './components/Header.vue'
 import About from './components/About.vue'
+import Team from './components/Team.vue'
 
 export default {
   name: 'app',
   components: {
     Home,
     Header,
-    About
+    About,
+    Team
     }
 }
 </script>

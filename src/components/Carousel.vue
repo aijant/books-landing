@@ -1,11 +1,11 @@
 <template>
   <div class="carousel">
     <div class='carousel-view'>
-      <img :src="images[currentNumber].img" />
+       <img :src="images[currentNumber].img" />
     </div>
-  <p>
-    <a @click="prev" href='#'>Previous</a> || <a @click="next" href='#'>Next</a>
-  </p>
+    <p>
+       <a @click="prev" href='#'>Previous</a> || <a @click="next" href='#'>Next</a>
+    </p>
   </div>
 </template>
 

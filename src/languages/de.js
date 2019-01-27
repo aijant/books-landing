@@ -1,7 +1,7 @@
 const getHomeText = () => {
     return {
-        overview: "ЧУДЕСА АРХИТЕКТУРЫ",
-        text1:"Библиотека Штутгарта — самая изящная городская библиотека в мире",
+        overview: "welcome to our marketplace",
+        text1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus",
     
     }
 }
