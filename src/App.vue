@@ -4,6 +4,7 @@
     <Home/>
     <About/>
     <Team/>
+    <Work/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Home from './components/Home.vue'
 import Header from './components/Header.vue'
 import About from './components/About.vue'
 import Team from './components/Team.vue'
+import Work from './components/Work.vue'
 
 export default {
   name: 'app',
@@ -19,7 +21,8 @@ export default {
     Home,
     Header,
     About,
-    Team
+    Team,
+    Work
     }
 }
 </script>

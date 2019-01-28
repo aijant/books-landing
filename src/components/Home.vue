@@ -33,7 +33,7 @@ export default {
       content: {},
       images: [
          {
-          img:require('../assets/carousel/pic.png'),
+          img:require('../assets/carousel/pic.png'), 
           alt: "Hello flower"
         },
         {

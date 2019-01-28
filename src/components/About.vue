@@ -35,19 +35,19 @@ export default {
       title: 'we are modest.',
       links: [
         {
-          icon: 'F.png',
+          icon: 'facebook.png',
          },
         {
-          icon: 'L.png',
+          icon: 'linkedin.png',
          },
         {
-          icon: 'g.png',
+          icon: 'google.png',
          },
         {
-          icon: 'D.png',
+          icon: 'Dribble.png',
          },
         {
-          icon: 'e.png',
+          icon: 'Bechance.png',
        }
       ],
       items: [
