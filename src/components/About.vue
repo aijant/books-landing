@@ -80,15 +80,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.container {
+  width: 1350px;
+  margin: 0 auto;
+  }
+
 .about {
   height: 460px;
   border-bottom: 1px solid #dde1e4;
 }
 
-.container {
-  width: 1050px;
-  margin: 0 auto;
-}
 .about-title {
   text-align: left;
   padding-left: 18px;
@@ -96,17 +97,15 @@ export default {
   color: #292f36;
   font-size: 18px;
   margin-left: 55px;
-  font-weight: 700;
   line-height: 42px;
   text-transform: uppercase;
 }
 
 .content {
-  width: 457px;
+  width: 587px;
   height: 222px;
   color: #8d8f92;
   font-size: 16px;
-  font-weight: 400;
   line-height: 26px;
   float: left;
   text-align: justify;
@@ -124,9 +123,7 @@ export default {
   background-color: #c8cdd0;
   color: #ffffff;
   font-size: 30px;
-  font-weight: 400;
   line-height: 86px;
-  text-transform: uppercase;
   padding: 13px;
   margin: 1px;
 }
@@ -147,7 +144,6 @@ export default {
   color: #fcf7f7;
   font-family: "Quattrocento Sans";
   font-size: 20px;
-  font-weight: 700;
   line-height: 42px;
   text-transform: uppercase;
   float: left;
@@ -160,7 +156,7 @@ export default {
 
 .item-title {
   width: 448px;
-  height: 34px;
+  height:10px;
   color: #292f36;
   font-size: 18px;
   font-weight: 700;

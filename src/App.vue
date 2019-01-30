@@ -5,6 +5,10 @@
     <About/>
     <Team/>
     <Work/>
+    <Services/>
+    <Features/>
+    <Contact/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +18,11 @@ import Header from './components/Header.vue'
 import About from './components/About.vue'
 import Team from './components/Team.vue'
 import Work from './components/Work.vue'
+import Services from './components/Services.vue'
+import Features from './components/Features.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
+
 
 export default {
   name: 'app',
@@ -22,7 +31,11 @@ export default {
     Header,
     About,
     Team,
-    Work
+    Work,
+    Services,
+    Features,
+    Contact,
+    Footer
     }
 }
 </script>

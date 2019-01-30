@@ -74,7 +74,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
-  width: 1050px;
+  width: 1350px;
   margin: 0 auto;
 }
 
@@ -92,6 +92,7 @@ export default {
 
 .persons {
   padding: 0 20px;
+  margin-left: 81px;
   display: flex;  
 }
 
@@ -134,11 +135,6 @@ export default {
   background: #4e5a62;
 }
 
-/* .block:hover {
-  display: block;
-  background: #0a2b5c;
-  cursor: pointer;
-} */
 
 .item-name {
   text-align: left;
