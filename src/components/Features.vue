@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import languageHelper from "../languages/de.js"
+import languageHelper from "../languages/langhelper.js"
 export default {
   name: 'Features',
    created(){
-     this.setContent(languageHelper.getFeaturesContent())
+     this.setContent(languageHelper.getFeaturesContent(this.language))
   },
   data(){
     return {

@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import languageHelper from "../languages/de.js"
+import languageHelper from "../languages/langhelper.js"
 export default {
   name: 'About',
     data () {
@@ -54,7 +54,7 @@ export default {
     }
   },
   created(){
-     this.setContent(languageHelper.getAboutContent())
+     this.setContent(languageHelper.getAboutContent(this.language))
   },
   methods: {
     getIconPath (iconName) {

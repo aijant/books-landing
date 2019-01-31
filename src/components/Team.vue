@@ -21,11 +21,11 @@
 </template>
 
 <script>
-import languageHelper from "../languages/de.js"
+import languageHelper from "../languages/langhelper.js"
 export default {
     name: 'Team',
     created(){
-     this.setContent(languageHelper.getTeamContent())
+      this.setContent(languageHelper.getTeamContent(this.language))
   },
     data () {
     return {

@@ -29,11 +29,11 @@
 </template>
 
 <script>
-import languageHelper from "../languages/de.js"
+import languageHelper from "../languages/langhelper.js"
 export default {
   name: 'Services',
    created(){
-     this.setContent(languageHelper.getServicesContent())
+     this.setContent(languageHelper.getServicesContent(this.language))
   },
   data(){
     return {

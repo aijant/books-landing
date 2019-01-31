@@ -8,7 +8,7 @@
           <a href="#">view more</a>
         </button>
         <button class="btn-video">
-          <a href="https://www.youtube.com/watch?v=x4Xh4ruKtfw">video tour</a>
+          <a href="#">video tour</a>
         </button>
       </div> 
     </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import languageHelper from "../languages/de.js"
+import languageHelper from "../languages/langhelper.js"
 import Carousel from "./Carousel.vue"
 
 export default {
@@ -26,7 +26,7 @@ export default {
       Carousel
     },
   created(){
-    this.setText(languageHelper.getHomeText())
+    this.setText(languageHelper.getHomeText(this.language))
   },
   data(){
     return {

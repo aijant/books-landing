@@ -1,7 +1,7 @@
 const getHomeText = () => {
     return {
         overview: "welcome to our marketplace",
-        text1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus",
+        text1:"Exclusive Design by Best Florists",
     
     }
 }
@@ -9,23 +9,23 @@ const getHomeText = () => {
 const getAboutContent = () => {
     return {
         title: 'We are modest.',
-        text1 : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.",
-        text2 : "Phasellus sollicitudin ante eros ornare, <b>sit amet luctus lorem semper.</b> Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum",
+        text1 : "The language of flowers is an assistant for those who want to express a feeling of admiration, respect, love, and gratitude without words. A luxurious bouquet, given on occasion or without it, will tell you all about your attitude towards the addressee.",
+        text2 : "The flower shop will help you to build a composition that will be <b>the perfect addition to any gift</b>, a pleasant sign of attention for a loved one.",
         facts: [
             {
               number: '01',
-              title: 'Dedication to the customers',
+              title: 'Flowers Help You Find the Harmony',
               content: 'Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus.'
             },
             {
               number: '02',
               title: 'working closely with our clients',
-              content: 'Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.'
+              content: 'To get a response more promptly, you are recommended to use our Ticket-system.'
             },
             {
               number: '03',
               title: 'increase happiness',
-              content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.'
+              content: 'We try to answer your questions within 1-10 hours.'
             }
           ] 
     }
@@ -92,7 +92,6 @@ const getWorkContent = () => {
         },
                
       ]
-  
   }
 }
 
@@ -147,11 +146,17 @@ const getContactContent = () => {
   return {
     title:'stay in touch.',
     overtitle:'contact information',
-    info1:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.',
-    info2:'Cras fermentum elit quis magna congue, <b>vel sodales</b> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus'
+    info1:'Having come to the store, we first of all try to find the right product as soon as possible.',
+    info2:'The store offers ready-made bouquets of fresh flowers or assistance in choosing a houseplant.'
   }
 }
 
 export default {
-    getHomeText, getAboutContent,getTeamContent,getWorkContent,getServicesContent,getFeaturesContent, getContactContent
+    getHomeText,
+    getAboutContent,
+    getTeamContent,
+    getWorkContent,
+    getServicesContent,
+    getFeaturesContent, 
+    getContactContent
 }

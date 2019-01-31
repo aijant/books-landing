@@ -19,14 +19,14 @@
 
 <script>
 import MessageForm from "./MessageForm.vue"
-import languageHelper from "../languages/de.js"
+import languageHelper from "../languages/langhelper.js"
 export default {
   name: 'Contact',
   components: { 
       MessageForm
     },
      created(){
-     this.setContent(languageHelper.getContactContent())
+     this.setContent(languageHelper.getContactContent(this.language))
   },
   data(){
     return {
@@ -82,8 +82,8 @@ export default {
   width: 254px;
   height: 15px;
   color: #292f36;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 17px;
