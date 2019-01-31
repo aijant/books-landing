@@ -1,9 +1,9 @@
 <template>
  <div class="team">
    <div class="container">
-      <h4 class="team-title">{{ title }}</h4>
+      <h4 class="team-title">{{ content.title }}</h4>
       <div class="persons">
-        <div class="item" v-for="item in items">
+        <div class="item" v-for="item in content.posts">
           <div class="block">
             <a v-for="link in links" class="icon" href="#">
               <img :src="getIconPath(link.icon)">
@@ -21,52 +21,35 @@
 </template>
 
 <script>
+import languageHelper from "../languages/de.js"
 export default {
     name: 'Team',
+    created(){
+     this.setContent(languageHelper.getTeamContent())
+  },
     data () {
     return {
-      title: 'meet the team.',
-      items: [
-        {
-          img:require('../assets/photos/ceo.png'), 
-          name: 'Gloria Bromley',
-          stelle: 'CEO and Founder'
-        },
-        {
-          img:require('../assets/photos/development.png'),
-          name: 'Paul Torres',
-          stelle: 'Head of Development'
-        },
-        {
-          img:require('../assets/photos/graphic.png'),
-          name: 'Judith Gillette',
-          stelle: 'Graphic Desinger'
-        },
-        {
-          img:require('../assets/photos/director.png'),
-          name: 'Delores Reed',
-          stelle: 'Client Service Director'
-        }
-      ],
-
-   links: [
-        {
-          icon: 'linkedin.png',
-         },
-        {
-          icon: 'facebook.png',
-         },
-          {
-          icon: 'in.png',
-         } 
-          ]
-      }
+      links: [
+            {
+              icon: 'linkedin.png',
+            },
+            {
+              icon: 'facebook.png',
+            },
+              {
+              icon: 'in.png',
+            } 
+              ],
+            content: {}    
+          }
     },
       methods: {
-    getIconPath (iconName) {
-        return iconName ? require(`../assets/icons/${iconName}`) : ''
-    }
-  
+        getIconPath (iconName) {
+            return iconName ? require(`../assets/icons/${iconName}`) : ''
+        },
+      setContent(data){
+        this.content = data
+      }
   }
 }
 </script>

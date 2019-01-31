@@ -2,15 +2,15 @@
   <div class="work">
    <div class="container">
     <div class="block">
-      <h4 class="work-title">{{ title }}</h4>
+      <h4 class="work-title">{{ content.title }}</h4>
       <div class="photo1">
-        <div class="item" v-for="item in items">
+        <div class="item" v-for="item in content.items">
            <img :src="item.img" />
            <p class="item-info"> {{ item.info }}</p>
         </div>
       </div> 
       <div class="photo2">
-        <div class="item" v-for="item in indexs">
+        <div class="item" v-for="item in content.indexs">
           <img :src="item.img" />
           <p class="item-info"> {{ item.info }}</p>
         </div>
@@ -26,42 +26,22 @@
 </template>
 
 <script>
-
+import languageHelper from "../languages/de.js"
 export default {
     name: 'Work',
+     created(){
+     this.setContent(languageHelper.getWorkContent())
+  },
     data () {
     return {
-      title: 'lovely work.',
-      items: [
-        {
-          img:require('../assets/photos/bird.png'), 
-          info:'Easy theme Setup',
-         },
-        {
-          img:require('../assets/photos/dance.png'),
-          info:'Easy theme Setup',
-        },
-          {
-          img:require('../assets/photos/street.png'),
-          info:'Easy theme Setup'
-         }
-      ],
-      indexs:[
-        {
-          img:require('../assets/photos/sea.png'),
-          info:'Easy theme Setup',
-          },
-          {
-          img:require('../assets/photos/mountain.png'),
-          info:'Easy theme Setup',
-        },
-          {
-          img:require('../assets/photos/bird.png'),
-          info:'Easy theme Setup'
-        },
-               
-      ],
+      content: {} 
+       
      }
+  },
+  methods:{
+    setContent(data){
+      this.content = data
+    }
   }
 }
 </script>

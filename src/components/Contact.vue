@@ -1,14 +1,14 @@
 <template>
   <div class="contact">
     <div class="container">
-      <h4 class="contact-title">{{ title }}</h4>
+      <h4 class="contact-title">{{ content.title }}</h4>
       <div class="maps">
         <div class="item" v-for="item in items">
           <img :src="item.img" />   
       <div class="maps-info">
-        <div class="maps-overtitle">{{ overtitle }}</div>
-          <p class="maps-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.</p>
-          <p class="maps-text">Cras fermentum elit quis magna congue, <b>vel sodales</b> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
+        <div class="maps-overtitle">{{ content.overtitle }}</div>
+          <p class="maps-text">{{content.info1}}</p>
+          <p class="maps-text">{{content.info2}}</p>
      </div>
        </div> 
      </div>
@@ -19,22 +19,30 @@
 
 <script>
 import MessageForm from "./MessageForm.vue"
-
+import languageHelper from "../languages/de.js"
 export default {
   name: 'Contact',
   components: { 
       MessageForm
     },
+     created(){
+     this.setContent(languageHelper.getContactContent())
+  },
   data(){
     return {
-        title:'stay in touch.',
-        overtitle:'contact information',
+      content: {} ,
+       
         items: [
         {
           img:require('../assets/photos/maps.png'),
           
         }
       ]
+    }
+  },
+   methods:{
+    setContent(data){
+      this.content = data
     }
   }
   

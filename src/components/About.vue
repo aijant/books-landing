@@ -1,11 +1,11 @@
 <template>
  <div class="about">
     <div class="container">
-      <h4 class="about-title">{{ title }}</h4>
+      <h4 class="about-title">{{content.title }}</h4>
       <div class="block">
         <div class="content">
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum  quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at. </p>
-          <p class="text">Phasellus sollicitudin ante eros ornare, <b>sit amet luctus lorem semper.</b> Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+          <p class="text">{{content.text1}} </p>
+          <p class="text">{{content.text2}}</p>
           <div class="social-block">
             <a v-for="link in links"
               class="icon" href="#">
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="listest">
-          <div class="item" v-for="item in items">
+          <div class="item" v-for="item in content.facts">
             <div class="number">{{ item.number }}</div>
             <div class="items-overview">
               <h3 class="item-title"> {{ item.title }}</h3>
@@ -28,12 +28,12 @@
 </template>
 
 <script>
+import languageHelper from "../languages/de.js"
 export default {
   name: 'About',
     data () {
     return {
-      title: 'we are modest.',
-      links: [
+     links: [
         {
           icon: 'facebook.png',
          },
@@ -50,28 +50,18 @@ export default {
           icon: 'Bechance.png',
        }
       ],
-      items: [
-        {
-          number: '01',
-          title: 'Dedication to the customers',
-          content: 'Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus.'
-        },
-        {
-          number: '02',
-          title: 'working closely with our clients',
-          content: 'Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.'
-        },
-        {
-          number: '03',
-          title: 'increase happiness',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.'
-        }
-      ]  
+      content: {}  
     }
+  },
+  created(){
+     this.setContent(languageHelper.getAboutContent())
   },
   methods: {
     getIconPath (iconName) {
         return iconName ? require(`../assets/icons/${iconName}`) : ''
+    },
+    setContent(data){
+      this.content = data
     }
   }, 
 }

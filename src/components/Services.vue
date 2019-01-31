@@ -1,14 +1,14 @@
 <template>
   <div class="services">
     <div class="container">
-      <h4 class="services-title">{{ title }}</h4>
+      <h4 class="services-title">{{ content.title }}</h4>
       <div class="block-services">
            <a v-for="link in links" class="icon" href="#">
            <img :src="getIconPath(link.icon)">
            </a>
       </div> 
       <div class="navigation">
-        <div class="item" v-for="item in items"> 
+        <div class="item" v-for="item in content.items"> 
           <h3 class="item-text"> {{ item.text }}</h3>       
           <p class="information">{{ item.info }}</p>
          </div>
@@ -19,7 +19,7 @@
            </a>
       </div> 
       <div class="navigation">
-        <div class="item" v-for="item in items"> 
+        <div class="item" v-for="item in content.items"> 
           <h3 class="item-text"> {{ item.text }}</h3>       
           <p class="info">{{ item.info }}</p>
         </div>
@@ -29,31 +29,16 @@
 </template>
 
 <script>
+import languageHelper from "../languages/de.js"
 export default {
   name: 'Services',
+   created(){
+     this.setContent(languageHelper.getServicesContent())
+  },
   data(){
     return {
-      title: 'what we do.',
-      items: [
-        {
-          text: 'Easy theme Setup',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
-        },
-        {
-          text: 'pixel perfect design',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
-        },
-       {
-          text: 'responsive display',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
-        },
-        {
-          text: '24/7 support',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
-        }               
-      ],
-
-   links: [
+     content: {} ,
+       links: [
         {
           icon: 'cogs.png',
          },
@@ -72,8 +57,10 @@ export default {
       methods: {
     getIconPath (iconName) {
         return iconName ? require(`../assets/icons/${iconName}`) : ''
+    },
+    setContent(data){
+      this.content = data
     }
-  
   }
 }
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div class="Features">
     <div class="container">
-      <h4 class="features-title">{{ title }}</h4>
+      <h4 class="features-title">{{ content.title }}</h4>
       <div class="function">
-        <div class="item" v-for="item in items">
+        <div class="item" v-for="item in content.logos">
            <img :src="item.img" />          
           <div class="design">
             <h3 class="brand"> {{ item.brand }}</h3>
@@ -12,36 +12,27 @@
         </div>
       </div>
     </div>
-  
   </div>
 </template>
 
 <script>
+import languageHelper from "../languages/de.js"
 export default {
   name: 'Features',
+   created(){
+     this.setContent(languageHelper.getFeaturesContent())
+  },
   data(){
     return {
-      title: 'FEATURES.',
-      items: [
-        {
-          img:require('../assets/photos/tractor.png'), 
-          brand: 'Product Design: Eames Chairs',
-          product: 'Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.'
-        },
-         {
-          img:require('../assets/photos/bicycle.png'), 
-          brand: 'Elegant and Colorful Logos',
-          product: 'I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it.'
-        },
-          {
-          img:require('../assets/photos/road.png'), 
-          brand: 'A Showcase of Creative',
-          product: 'It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style.'
-        }
-      ],
+      content: {}          
+    }
+  },
+   methods:{
+    setContent(data){
+      this.content = data
     }
   }
-  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

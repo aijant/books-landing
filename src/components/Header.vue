@@ -18,12 +18,7 @@
 
 <script>
 export default {
-  name: 'Header',
-  data(){
-    return {
-    
-    }
-  }
+  name: 'Header'
 }
 </script>
 
@@ -154,7 +149,7 @@ body {
     border-bottom: none;
   }
 }
-@media screen and (min-width: 980px){
+@media screen and (min-width: 1350px){
   header{
     height: 66px;
   }

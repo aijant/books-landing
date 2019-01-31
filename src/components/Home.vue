@@ -65,8 +65,6 @@ export default {
 }
 
 h1 { 
-  width: 507px;
-  height: 26px;
   color:#f8f5f5;
   font-size: 26px;
   font-weight: bold;
@@ -76,8 +74,6 @@ h1 {
 }
 
 p {
-  width: 648px;
-  height: 43px;
   color: #ccd0d7;
   font-size: 16px;
   font-weight: normal;
@@ -90,16 +86,12 @@ p {
 }
 
 .btn-view {
-  width: 120px;
-  height: 40px;
   border: 2px solid #ffffff;
   background: none;
   border-radius: 4px;
 }
 
 .btn-view a {
-  width: 68px;
-  height: 10px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -114,8 +106,6 @@ p {
 }
 
 .btn-video{
-  width: 120px;
-  height: 40px;
   border: 2px solid #ffffff;
   background: none;
   margin-left: 13px;
@@ -123,8 +113,6 @@ p {
 }
 
 .btn-video a {
-  width: 72px;
-  height: 10px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -137,5 +125,14 @@ p {
   border: 2px solid #23b7a4;
   background: #23b7a4;
 }
+
+@media screen and (min-width: 620px){
+  
+}
+
+@media screen and (min-width: 1350px){
+  
+}
+
 </style>
  
