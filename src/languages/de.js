@@ -1,7 +1,7 @@
 const getHomeText = () => {
     return {
         overview: "welcome to our marketplace",
-        text1:"Exclusive Design by Best Florists",
+        text1:"Exclusive design by best Florists",
     
     }
 }
