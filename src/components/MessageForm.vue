@@ -1,16 +1,16 @@
 <template>
 <div class="form">
   <div class="contact-form">
-  <div class="messages">
-    <div class="form-names">
-      <label class="form-name" for="name">Your Name</label>
-      <input type="text" class="form-input" id="name">
+    <div class="messages">
+      <div class="form-names">
+        <label class="form-name" for="name">Your Name</label>
+        <input type="text" class="form-input" id="name">
+      </div>
+      <div class="form-email">
+        <label class="form-mail" for="mail">Your email</label>
+        <input type="text" class="form-input" id="mail">
+      </div>
     </div>
-    <div class="form-email">
-      <label class="form-mail" for="mail">Your email</label>
-      <input type="text" class="form-input" id="mail">
-    </div>
-  </div>
     <div class="form-messages">
       <label class="form-message" for="message">Your message</label>
       <textarea class="form-textarea" id="message"></textarea>
@@ -39,15 +39,16 @@ export default {
   height: 400px;
   float: right;
   margin-top: -214px;
-  margin-right: 90px;
-  
+  margin-right: 90px;  
+}
+
+.contact-form {
+  padding: 22px 0 0 30px;
 }
 
 .messages {
   display: flex;
-  padding: 18px;
-  text-align: left;
-  
+  text-align: left;  
 } 
 
 .form-names {
@@ -85,7 +86,7 @@ export default {
 }
 
 .form-messages {
-  margin-bottom: 0;
+  text-align: left;
 }
 
 .form-message {
@@ -95,10 +96,11 @@ export default {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-top: 11px;
 }
 
 .form-textarea {
-  width: 495px;
+  width: 500px;
   height: 159px;
   background-color: #eaeef1;
   border: 0;
@@ -125,4 +127,14 @@ export default {
   cursor: pointer;
 }
 
+@media screen and (max-width: 915px){
+ 
+}
+@media screen and (max-width: 780px){
+
+}
+
+@media screen and (max-width: 600px){
+
+}
 </style>

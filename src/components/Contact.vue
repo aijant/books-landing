@@ -5,11 +5,11 @@
       <div class="maps">
         <div class="item" v-for="item in items">
           <img :src="item.img" />   
-      <div class="maps-info">
-        <div class="maps-overtitle">{{ content.overtitle }}</div>
-          <p class="maps-text">{{content.info1}}</p>
-          <p class="maps-text">{{content.info2}}</p>
-     </div>
+          <div class="maps-info">
+            <div class="maps-overtitle">{{ content.overtitle }}</div>
+            <p class="maps-text">{{content.info1}}</p>
+            <p class="maps-text">{{content.info2}}</p>
+          </div>
        </div> 
      </div>
    </div>
@@ -53,10 +53,12 @@ export default {
 <style scoped>
 
 .container {
-  width: 1350px;
+  width: 1250px;
   margin: 0 auto;
 }
-
+ img {
+   width: 1250px;
+ }
 .contact-title {
   text-align: left;
   padding-left: 18px;
@@ -91,13 +93,51 @@ export default {
 }
 
 .maps-text {
-width: 535px;
-height: 71px;
-color: #8d8f92;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
+  width: 535px;
+  height: 71px;
+  color: #8d8f92;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
+
+@media screen and (max-width: 915px){
+ .container {
+   width: 1035px;
+ }
+ img {
+  width: 1030px;
+ }
+.contact-title {
+  padding-left: 8px;
+  border-left: 4px solid #e1e6ea;
+  font-size: 15px;
+  margin-left: 6px;
+  line-height: 34px;
+  }
+.maps-overtitle {
+  width: 210px;
+  height: 7px;
+  font-size: 12px;
+  line-height: 2px;
+  padding-bottom: 4px;
+  padding-top: 42px;
+}
+.maps-text {
+  width: 350px;
+  height: 65px;
+  font-size: 13px;
+  line-height: 22px;
+}
+}
+
+@media screen and (max-width: 780px){
+
+}
+
+@media screen and (max-width: 600px){
+
+}
 
 </style>

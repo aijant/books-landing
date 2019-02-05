@@ -71,7 +71,7 @@ export default {
 <style scoped>
 
 .container {
-  width: 1350px;
+  width: 1250px;
   margin: 0 auto;
   }
 
@@ -89,6 +89,11 @@ export default {
   margin-left: 55px;
   line-height: 42px;
   text-transform: uppercase;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -132,7 +137,6 @@ export default {
   height: 50px;
   background-color: #23b7a4;
   color: #fcf7f7;
-  font-family: "Quattrocento Sans";
   font-size: 20px;
   line-height: 42px;
   text-transform: uppercase;
@@ -165,4 +169,22 @@ export default {
   text-align: left;
 }
 
+@media screen and (max-width: 950px){
+.container {
+     width: 950px;
+    }
+}
+
+@media screen and (max-width: 680px){
+   .container {
+    width: 680px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .container {
+    width: 450px;
+  }
+ }
+ 
 </style>

@@ -75,9 +75,7 @@ const getWorkContent = () => {
           {
           img:require('../assets/photos/street.png'),
           info:'Easy theme Setup'
-         }
-      ],
-      indexs:[
+         },
         {
           img:require('../assets/photos/sea.png'),
           info:'Easy theme Setup',
@@ -100,22 +98,22 @@ const getServicesContent = () => {
       title: 'what we do.',
       items: [
         {
-          text: 'Easy theme Setup',
+          text: 'Bride’s & Bridesmaids’ Bouquets',
           info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
         },
         {
           text: 'pixel perfect design',
           info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
         },
+            {
+         text: 'Making the ceremony',
+         info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+       },
        {
-          text: 'responsive display',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
-        },
-        {
-          text: '24/7 support',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
-        }               
-      ]     
+         text: 'A Fairytale for a Modern Princess',
+         info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+       }
+        ]     
   }
 }
 

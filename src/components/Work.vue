@@ -3,18 +3,12 @@
    <div class="container">
     <div class="block">
       <h4 class="work-title">{{ content.title }}</h4>
-      <div class="photo1">
+      <div class="photo">
         <div class="item" v-for="item in content.items">
            <img :src="item.img" />
            <p class="item-info"> {{ item.info }}</p>
         </div>
       </div> 
-      <div class="photo2">
-        <div class="item" v-for="item in content.indexs">
-          <img :src="item.img" />
-          <p class="item-info"> {{ item.info }}</p>
-        </div>
-      </div>
       <div class="btns-row">
        <button class="btn-show">
          <a href="#">show me more</a>
@@ -48,8 +42,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.work {
+   background-color: #3a454d;
+}
+
 .container {
-  width: 1350px;
+  width: 1250px;
   margin: 0 auto;
 }
 
@@ -65,29 +63,15 @@ export default {
   text-transform: uppercase;
 }
 
-.block {
-  width: 1410px;
-  height: 899px;
-  background-color: #3a454d;
-}
-
-.photo1 {
-  width: 360px;
-  height: 265px;
-  display: flex;
+.photo {
   padding-bottom: 60px;
   margin-left: 30px;
-}
-
-.photo2 {
-  width: 360px;
-  height: 265px;
   display: flex;
-  margin-left: 30px;
+  flex-wrap: wrap;
 }
 
 .item {
-  padding: 30px; 
+  padding: 15px; 
 }
 
 .item-info {
@@ -99,7 +83,7 @@ export default {
   margin-top: -56px;
   background: #292f36;
   position: absolute;
-  width: 23.7%;
+  width: 346px;
   color: #fff;
   text-align: left;
   padding: 15px 0 0 22px;
@@ -109,7 +93,8 @@ export default {
 
 .btns-row {
   text-align: center;
-  margin-top: 115px;
+  margin-top: 29px;
+  padding-bottom: 50px;
 }
 
 .btn-show {  
@@ -134,4 +119,39 @@ export default {
   border: 2px solid  #deb4b4;
   background: #deb4b4;
 }
+img {
+  width: 368px;
+  height: 270px;
+}
+
+@media screen and (max-width: 1100px){
+  .container {
+    width: 1100px; 
+ }
+}
+
+@media screen and (max-width: 961px){
+  .container {
+    width: 961px; 
+ }
+}
+
+@media screen and (max-width: 790px){
+  .container {
+    width: 764px; 
+  }
+}
+
+@media screen and (max-width: 620px){
+  .container {
+  width: 614px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container {
+  width: 500px;
+  }
+}
+
 </style>

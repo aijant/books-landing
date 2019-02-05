@@ -2,28 +2,29 @@
   <div class="services">
     <div class="container">
       <h4 class="services-title">{{ content.title }}</h4>
-      <div class="block-services">
-           <a v-for="link in links" class="icon" href="#">
-           <img :src="getIconPath(link.icon)">
-           </a>
-      </div> 
-      <div class="navigation">
-        <div class="item" v-for="item in content.items"> 
-          <h3 class="item-text"> {{ item.text }}</h3>       
-          <p class="information">{{ item.info }}</p>
-         </div>
-      </div>
-     <div class="block-services">
-           <a v-for="link in links" class="icon" href="#">
-           <img :src="getIconPath(link.icon)">
-           </a>
-      </div> 
-      <div class="navigation">
-        <div class="item" v-for="item in content.items"> 
-          <h3 class="item-text"> {{ item.text }}</h3>       
-          <p class="info">{{ item.info }}</p>
-        </div>
-      </div>
+          <div class="block-services">
+            <a v-for="link in links" class="icon" href="#">
+              <img :src="getIconPath(link.icon)">
+            </a>
+          </div> 
+          <div class="navigation">
+            <div class="item" v-for="item in content.items"> 
+              <h3 class="item-text"> {{ item.text }}</h3>       
+              <p class="information">{{ item.info }}</p>
+            </div>        
+          </div>
+      
+          <div class="block-services">
+            <a v-for="link in links" class="icon" href="#">
+              <img :src="getIconPath(link.icon)">
+            </a>
+          </div> 
+          <div class="navigation">
+            <div class="item" v-for="item in content.items"> 
+              <h3 class="item-text"> {{ item.text }}</h3>       
+              <p class="information">{{ item.info }}</p>
+            </div>
+          </div>
     </div>
   </div>
 </template>
@@ -68,8 +69,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
-  width: 1350px;
+  width: 1250px;
   margin: 0 auto;
+}
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services-title {
@@ -119,5 +125,22 @@ export default {
   font-size: 16px;
   line-height: 26px;
   margin-left: 43px;
+}
+
+@media screen and (max-width: 915px){
+  .container {
+    width: 928px;
+  }
+}
+@media screen and (max-width: 780px){
+  .container {
+    width: 752px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .container {
+    width:568px;
+  }
 }
 </style>

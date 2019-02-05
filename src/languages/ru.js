@@ -66,29 +66,29 @@ const getWorkContent = () => {
       items: [
         {
           img:require('../assets/photos/bird.png'), 
-          info:'Easy theme Setup',
+          info:' Богатая витрина магазина',
          },
         {
           img:require('../assets/photos/dance.png'),
-          info:'Easy theme Setup',
+          info:' Богатая витрина магазина',
         },
           {
           img:require('../assets/photos/street.png'),
-          info:'Easy theme Setup'
+          info:' Богатая витрина магазина'
          }
       ],
       indexs:[
         {
           img:require('../assets/photos/sea.png'),
-          info:'Easy theme Setup',
+          info:' Богатая витрина магазина',
           },
           {
           img:require('../assets/photos/mountain.png'),
-          info:'Easy theme Setup',
+          info:' Богатая витрина магазина',
         },
           {
           img:require('../assets/photos/bird.png'),
-          info:'Easy theme Setup'
+          info:'Богатая витрина магазина'
         },
                
       ]
@@ -100,19 +100,19 @@ const getServicesContent = () => {
       title: 'что мы делаем.',
       items: [
         {
-          text: 'Easy theme Setup',
+          text: 'Букеты невесты',
           info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
         },
         {
-          text: 'pixel perfect design',
+          text: 'Корсажи и бутоньерки',
           info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
         },
        {
-          text: 'responsive display',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+          text: 'Оформление церемонии',
+          info: 'Вечная красота цветов: потрясающая фотосессия.Самые экстравагантные свадьбы викторианской эпохи.'
         },
         {
-          text: '24/7 support',
+          text: 'Сказка для современной принцессы',
           info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
         }               
       ]     
@@ -125,18 +125,18 @@ const getFeaturesContent = () => {
       logos: [
         {
           img:require('../assets/photos/tractor.png'), 
-          brand: 'Product Design: Eames Chairs',
-          product: 'Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.'
+          brand: 'Дизайн Eames',
+          product: 'Дизайн Eames, безусловно, является знаковым. Каждый из нас знает по крайней мере два или три своих знаменитых кресла.'
         },
          {
           img:require('../assets/photos/bicycle.png'), 
-          brand: 'Elegant and Colorful Logos',
-          product: 'I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it.'
+          brand: 'Элегантные логотипы',
+          product: 'Я всегда считал, что дизайн логотипа - одна из самых сложных вещей. Так много, может логотип сказать о бренде, даже не сказав этого.'
         },
           {
           img:require('../assets/photos/road.png'), 
-          brand: 'A Showcase of Creative',
-          product: 'It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style.'
+          brand: 'Витрина креатива',
+          product: 'Всегда интересно посмотреть, как другой дизайнер смотрит на известный веб-сайт. Разные дизайнеры добавляют свою индивидуальность.'
         }
       ]  
   }

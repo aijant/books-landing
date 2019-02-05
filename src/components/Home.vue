@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <div class="content">
       <h1>{{ content.overview }}</h1>
       <p>{{ content.text1 }}</p>
@@ -57,6 +57,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+body {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.3;
+  background: #f9f9f9;
+  max-width: 1250px;
+}
+
+.conteiner {
+  min-width: 320px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 .content {
   position: absolute;
   top: 302px;
@@ -126,13 +140,83 @@ p {
   background: #23b7a4;
 }
 
-@media screen and (min-width: 620px){
-  
+@media screen and (max-width: 950px){
+  .content {
+    margin-left: 150px;
+    top: 150px;
+  }
+  h1 {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 14px;
+  }
+   .btn-view a {
+    font-size: 8px;
+    line-height: 14px; 
+  }
+
+ .btn-video a {
+    font-size: 8px;
+    line-height: 14px; 
+  }
 }
 
-@media screen and (min-width: 1350px){
-  
+@media screen and (max-width: 650px){
+  .content {
+    margin-left: 100px;
+    top: 168px;
+  }
+  h1 {
+    font-size: 16px;
+    line-height: 12px;
+  }
+  p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+    .btn-view a {
+    font-size: 8px;
+    line-height: 16px; 
+  }
+  .btn-video a {
+    font-size: 8px;
+    line-height: 16px; 
+  }
+}
+
+@media screen and (max-width: 450px){
+  .content {
+    margin-left: 40px;
+    top: 104px;
+  }
+  h1 {
+    font-size: 9px;
+    line-height: 0px;
+  }
+  p {
+    font-size: 7px;
+    line-height: 20px;
+      
+  }
+  .btn-view {
+    border: 1px solid #ffffff;
+  }
+  .btn-view a {
+    font-size: 6px;
+    line-height: 10px; 
+  }
+  .btn-video {
+    border: 1px solid #ffffff;
+  }
+  .btn-video a {
+   font-size: 6px;
+   line-height: 10px; 
+  }
+
 }
 
 </style>
- 
+  

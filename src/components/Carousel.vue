@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div class='carousel-view'>
-       <img :src="images[currentNumber].img" />
+       <img :src="images[currentNumber].img"/>
     </div>
     <p>
        <a @click="prev" href='#'>Previous</a> || <a @click="next" href='#'>Next</a>
@@ -35,7 +35,25 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>   
 img {
-  width: 1350px;
+  width: 1255px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 950px) {
+  img {
+    width: 928px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  img {
+    width: 621px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  img {
+    width: 426px;
+  }
 }
 </style>

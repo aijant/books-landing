@@ -57,7 +57,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
-  width: 1350px;
+  width: 1250px;
   margin: 0 auto;
 }
 
@@ -76,11 +76,12 @@ export default {
 .persons {
   padding: 0 20px;
   margin-left: 81px;
-  display: flex;  
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.item {
-  padding-right: 15px;
+.item { 
+  padding: 8px;
 }
 
 .item:hover {
@@ -92,11 +93,6 @@ export default {
   margin-top: -4px;
   padding-left: 21px;
 }
-
-/* .color:hover {
-  background: #4e5a62;
-} */
-
 
 .block {
   display: none;
@@ -141,5 +137,28 @@ export default {
   text-align: left; 
 }
 
+@media screen and (max-width: 1100px){
+  .container {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .container {
+    width: 947px;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .container {
+      width: 650px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .container {
+    width: 450px;
+  }
+}
 
 </style>

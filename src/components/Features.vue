@@ -38,10 +38,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
-  width: 1350px;
+  width: 1250px;
   margin: 0 auto;
-  height: 732px;
-  background-color: #3a454d;
+   background-color: #3a454d;
 }
 
 .features-title {
@@ -51,16 +50,22 @@ export default {
   color:#e1e6ea;
   font-size: 18px;
   margin-left: 55px;
-  font-weight: 700;
   line-height: 42px;
   text-transform: uppercase;
 }
 
 .function {
   display: flex;
-  padding: 47px;
-  text-align: left;
+  flex-wrap: wrap;
 }
+
+/* .item {
+  padding: 15px;
+}
+
+.item:last-child {
+  padding-right: 0;
+} */
 
 .brand {
   color: #ffffff;
@@ -74,4 +79,35 @@ export default {
   font-size: 16px;
   line-height: 26px; 
 }
+
+@media screen and (max-width: 1100px){
+  .container {
+    width: 1100px; 
+ }
+}
+
+@media screen and (max-width: 961px){
+  .container {
+    width: 961px; 
+ }
+}
+
+@media screen and (max-width: 790px){
+  .container {
+    width: 764px; 
+  }
+}
+
+@media screen and (max-width: 620px){
+  .container {
+  width: 614px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container {
+  width: 500px;
+  }
+}
+
 </style>
