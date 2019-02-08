@@ -26,7 +26,8 @@ export default {
       Carousel
     },
   created(){
-    this.setText(languageHelper.getHomeText(this.language))
+    let data = languageHelper.getHomeText(this.language)
+    this.setText(data)
   },
   data(){
     return {

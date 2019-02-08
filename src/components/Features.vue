@@ -56,16 +56,16 @@ export default {
 
 .function {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
-/* .item {
+.item {
   padding: 15px;
 }
 
 .item:last-child {
   padding-right: 0;
-} */
+}
 
 .brand {
   color: #ffffff;

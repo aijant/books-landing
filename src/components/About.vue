@@ -93,7 +93,7 @@ export default {
 
 .block {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .content {
@@ -169,7 +169,7 @@ export default {
   text-align: left;
 }
 
-@media screen and (max-width: 950px){
+/* @media screen and (max-width: 950px){
 .container {
      width: 950px;
     }
@@ -185,6 +185,6 @@ export default {
   .container {
     width: 450px;
   }
- }
+ } */
  
 </style>
