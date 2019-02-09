@@ -16,6 +16,13 @@ describe('Home', () => {
       expect(defaultData.content).toEqual({})
     }),
 
+    it('renders the correct message', () => {
+      const Constructor = Vue.extend(Home)
+      const vm = new Constructor().$mount()
+     // console.log(vm.content.text1)
+       expect(vm.content.text1).toBe('Exclusive design by best Florists.')
+    }),      
+
     it('correctly sets the message when created', () => {
       const vm = new Vue(Home).$mount()
       //console.log(vm)

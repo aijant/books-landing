@@ -216,7 +216,6 @@ p {
    font-size: 6px;
    line-height: 10px; 
   }
-
 }
 
 </style>

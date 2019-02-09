@@ -4,16 +4,19 @@
       <h4 class="contact-title">{{ content.title }}</h4>
       <div class="maps">
         <div class="item" v-for="item in items">
-          <img :src="item.img" />   
-          <div class="maps-info">
-            <div class="maps-overtitle">{{ content.overtitle }}</div>
-            <p class="maps-text">{{content.info1}}</p>
-            <p class="maps-text">{{content.info2}}</p>
-          </div>
+          <img :src="item.img" />  
+          <div class="maps-block">
+            <div class="maps-info">
+              <h3 class="maps-overtitle">{{ content.overtitle }}</h3>
+              <p class="maps-text">{{content.info1}}</p>
+              <p class="maps-text">{{content.info2}}</p>
+            </div>
+            <MessageForm/>
+          </div> 
+          
        </div> 
      </div>
    </div>
-   <MessageForm/>
   </div>
 </template>
 
@@ -56,9 +59,11 @@ export default {
   width: 1250px;
   margin: 0 auto;
 }
+
  img {
    width: 1250px;
  }
+
 .contact-title {
   text-align: left;
   padding-left: 18px;
@@ -66,13 +71,17 @@ export default {
   color: #292f36;
   font-size: 18px;
   margin-left: 55px;
-  font-weight: 700;
   line-height: 42px;
   text-transform: uppercase;
 }
 
+.maps-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .maps-info {
-  width: 563px;
+  width: 560px;
   color: #8d8f92;
   font-size: 16px;
   line-height: 26px;
@@ -92,52 +101,31 @@ export default {
   padding-top: 50px;
 }
 
-.maps-text {
-  width: 535px;
-  height: 71px;
+.maps-text {  
   color: #8d8f92;
   font-size: 16px;
-  font-weight: 400;
   line-height: 26px;
 }
 
-
-@media screen and (max-width: 915px){
+@media screen and (max-width: 1058px){
  .container {
-   width: 1035px;
+   width: 1230px;
+ } 
+}
+
+@media screen and (max-width: 630px){
+.container {
+   /* width: 1230px; */
  }
- img {
-  width: 1030px;
+ .maps-text {
+   width: 487px;
  }
-.contact-title {
-  padding-left: 8px;
-  border-left: 4px solid #e1e6ea;
-  font-size: 15px;
-  margin-left: 6px;
-  line-height: 34px;
-  }
-.maps-overtitle {
-  width: 210px;
-  height: 7px;
-  font-size: 12px;
-  line-height: 2px;
-  padding-bottom: 4px;
-  padding-top: 42px;
-}
-.maps-text {
-  width: 350px;
-  height: 65px;
-  font-size: 13px;
-  line-height: 22px;
-}
 }
 
-@media screen and (max-width: 780px){
-
-}
-
-@media screen and (max-width: 600px){
-
+ @media screen and (max-width: 547px){
+ .maps-text {
+   width: 380px;
+ }
 }
 
 </style>

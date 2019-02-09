@@ -43,7 +43,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .work {
-   background-color: #3a454d;
+  background-color: #3a454d;
 }
 
 .container {
@@ -153,5 +153,4 @@ img {
   width: 500px;
   }
 }
-
 </style>

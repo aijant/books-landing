@@ -13,7 +13,7 @@
             </a> 
           </div>
         </div>
-        <div class="listest">
+        <div class="list">
           <div class="item" v-for="item in content.facts">
             <div class="number">{{ item.number }}</div>
             <div class="items-overview">
@@ -76,7 +76,6 @@ export default {
   }
 
 .about {
-  height: 460px;
   border-bottom: 1px solid #dde1e4;
 }
 
@@ -93,7 +92,7 @@ export default {
 
 .block {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .content {
@@ -105,6 +104,7 @@ export default {
   float: left;
   text-align: justify;
   margin-left: 55px;
+  padding-bottom: 40px;
 }
 
 .content .text {
@@ -123,9 +123,10 @@ export default {
   margin: 1px;
 }
 
-.listest{
+.list {
   float: right;
   width: 518px;
+  margin-left: 55px;
 }
 
 .item {
@@ -169,22 +170,32 @@ export default {
   text-align: left;
 }
 
-/* @media screen and (max-width: 950px){
+@media screen and (max-width: 950px){
 .container {
      width: 950px;
     }
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 665px){
    .container {
     width: 680px;
   }
+  .content {
+   width: 499px;
+  }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 570px){
   .container {
-    width: 450px;
+    width: 515px;
   }
- } */
+  .item-title {
+    width: 385px;
+  }
+  .list {
+    padding-top: 50px;
+  }
+
+ }
  
 </style>

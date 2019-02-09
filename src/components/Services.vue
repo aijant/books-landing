@@ -1,26 +1,12 @@
 <template>
   <div class="services">
     <div class="container">
-      <h4 class="services-title">{{ content.title }}</h4>
-          <div class="block-services">
-            <a v-for="link in links" class="icon" href="#">
-              <img :src="getIconPath(link.icon)">
-            </a>
-          </div> 
+      <h4 class="services-title">{{ content.title }}</h4> 
           <div class="navigation">
             <div class="item" v-for="item in content.items"> 
-              <h3 class="item-text"> {{ item.text }}</h3>       
-              <p class="information">{{ item.info }}</p>
-            </div>        
-          </div>
-      
-          <div class="block-services">
-            <a v-for="link in links" class="icon" href="#">
-              <img :src="getIconPath(link.icon)">
-            </a>
-          </div> 
-          <div class="navigation">
-            <div class="item" v-for="item in content.items"> 
+              <a class="icon" href="#">
+                <img :src="getIconPath(item.icon)">
+              </a>
               <h3 class="item-text"> {{ item.text }}</h3>       
               <p class="information">{{ item.info }}</p>
             </div>
@@ -38,21 +24,7 @@ export default {
   },
   data(){
     return {
-     content: {} ,
-       links: [
-        {
-          icon: 'cogs.png',
-         },
-        {
-          icon: 'pencil.png',
-         },
-          {
-          icon: 'mobile.png',
-         },
-           {
-          icon: 'clock.png',
-         }
-          ]
+     content: {}
       }
     },
       methods: {
@@ -92,18 +64,12 @@ export default {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
 }  
- 
-.block-services {
-  display: flex;
-}
-
-.icon {
-  margin-left: 240px;
-}
 
 .item {
   margin-top: 26px;
+  width: 306px;
 }
 
 .item-text {
@@ -126,21 +92,19 @@ export default {
   line-height: 26px;
   margin-left: 43px;
 }
-
-@media screen and (max-width: 915px){
+@media screen and (max-width: 1060px){
   .container {
-    width: 928px;
+    width: 1200px;
   }
 }
-@media screen and (max-width: 780px){
+@media screen and (max-width: 940px){
   .container {
-    width: 752px;
+    width: 900px;
   }
 }
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 636px){
   .container {
-    width:568px;
+    width: 600px;
   }
 }
 </style>

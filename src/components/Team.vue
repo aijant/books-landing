@@ -114,7 +114,6 @@ export default {
   background: #4e5a62;
 }
 
-
 .item-name {
   text-align: left;
   margin: 0;

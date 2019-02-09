@@ -25,7 +25,7 @@ describe('About', () => {
     it('renders the correct message', () => {
       const Constructor = Vue.extend(About)
       const vm = new Constructor().$mount()
-      //console.log(vm.content.title)
-     expect(vm.content.title).toBe('We are modest.')
+     // console.log(vm.content.title)
+      expect(vm.content.title).toBe('We are modest.')
     }) 
 })

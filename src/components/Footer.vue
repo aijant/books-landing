@@ -49,11 +49,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.footer {
+  background-color: #3a454d;
+}
+
 .container {
   margin-top: 233px;
   width: 1250px;
   height: 95px;
-  background-color: #3a454d;
+  }
+
+.footer-block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-text {
@@ -66,12 +74,12 @@ export default {
 }
 
 .footer-social {
-  float: right;
+  float: right; 
 }
+
 .icon {
   line-height: 71px;
   padding: 9px;
-  /* margin-left: 10px; */
-  }
+}
 
 </style>

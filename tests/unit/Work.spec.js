@@ -3,12 +3,24 @@ import Vue from 'vue'
 import Work from '@/components/Work.vue'
 Vue.prototype.language = "de"
 
-describe('Home', () => {
-    // Проверка опций компонента
-    it('should render cerrect contents', () => {
-      const Constructor  = Vue.extend(Work)
-      const vm = new Constructor().$mount()
-      //console.log(vm.$el.querySelector('h4').textContent)
-      expect(vm.$el.querySelector('.work-title').textContent).toEqual('Lovely work')
-    })
-  })
+describe('Work', () => {
+  // Проверка опций компонента
+  it('has a created hook', () => {
+    expect(typeof Work.created).toBe('function')
+  }),
+
+  it('sets the correct default data', () => {
+    expect(typeof Work.data).toBe('function')
+    const defaultData = Work.data()
+    console.log(defaultData)
+    //expect(defaultData.content).toEqual({})
+  }),
+
+ it('should show all the links', () => {
+    const Constructor = Vue.extend(Work)
+    const vm = new Constructor().$mount()
+    expect(vm.querySelectorAll('a').length)
+    .to.equal(1)
+ })
+
+})

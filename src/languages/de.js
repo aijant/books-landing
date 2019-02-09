@@ -10,7 +10,7 @@ const getAboutContent = () => {
     return {
         title: 'We are modest.',
         text1 : "The language of flowers is an assistant for those who want to express a feeling of admiration, respect, love, and gratitude without words. A luxurious bouquet, given on occasion or without it, will tell you all about your attitude towards the addressee.",
-        text2 : "The flower shop will help you to build a composition that will be <b>the perfect addition to any gift</b>, a pleasant sign of attention for a loved one.",
+        text2 : "The flower shop will help you to build a composition that will be the perfect addition to any gift, a pleasant sign of attention for a loved one.",
         facts: [
             {
               number: '01',
@@ -99,21 +99,45 @@ const getServicesContent = () => {
       items: [
         {
           text: 'Bride’s & Bridesmaids’ Bouquets',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'cogs.png'
         },
         {
           text: 'pixel perfect design',
-          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'pencil.png',
         },
-            {
-         text: 'Making the ceremony',
-         info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+        {
+          text: 'Making the ceremony',
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'mobile.png',
        },
        {
-         text: 'A Fairytale for a Modern Princess',
-         info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+          text: 'A Fairytale for a Modern Princess',
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'clock.png',
+       },
+       {
+          text: 'Bride’s & Bridesmaids’ Bouquets',
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'cogs.png'
+        },
+        {
+          text: 'pixel perfect design',
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'pencil.png',
+        },
+        {
+          text: 'Making the ceremony',
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'mobile.png',
+       },
+       {
+          text: 'A Fairytale for a Modern Princess',
+          info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+          icon: 'clock.png',
        }
-        ]     
+    ]     
   }
 }
 

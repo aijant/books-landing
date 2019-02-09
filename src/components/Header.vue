@@ -36,7 +36,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
-.logo{
+.logo {
   width: 65px;
   height: 65px;
   background: #fed136 url(../assets/logo.png) 50% 50% no-repeat;
@@ -47,7 +47,7 @@ body {
   position: absolute;
   display: -webkit-box;
 }
-.nav-btn{
+.nav-btn {
   width: 65px;
   height: 65px;
   background: #198ca5;
@@ -57,7 +57,7 @@ body {
   border-radius: 5px;
   border: 2px solid #fed136;
 }
-.nav-btn i{
+.nav-btn i {
   width: 17px;
   height: 2px;
   background: #FFF;
@@ -67,7 +67,7 @@ body {
   margin: -1px 0 0 -9px;
 }
 .nav-btn i::before,
-.nav-btn i::after{
+.nav-btn i::after {
   content: "";
   width: 17px;
   height: 2px;
@@ -75,16 +75,16 @@ body {
   position: absolute;
   left: 0;
 }
-.nav-btn i::before{
+.nav-btn i::before {
   top: -6px;
 }
-.nav-btn i::after{
+.nav-btn i::after {
   top: 6px;  
 }
 .main-nav{
   position: relative;
 }
-.main-nav ul{
+.main-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -96,14 +96,14 @@ body {
   width: 20%;
   display: none;
 }
-.main-nav:hover ul{
+.main-nav:hover ul {
   display: block;
 }
-.main-nav li{
+.main-nav li {
   margin: 0;
   padding: 0;
 }
-.main-nav a{
+.main-nav a {
   padding: 7px 0;
   text-decoration: none;
   color: #000000;
@@ -114,43 +114,43 @@ body {
   text-transform: uppercase;
   font-size: 18px;
 }
-.main-nav a:hover{
+.main-nav a:hover {
   border-bottom: 2px solid #fed136;
   font-weight: 600;
 }
 
-@media screen and (min-width: 765px){
-  .main-nav ul{
+@media screen and (min-width: 765px) {
+  .main-nav ul {
     position: static;
     width: 100%;
     background: transparent;
     display: block;
     padding: 15px 0 0 60px;
   }
-  .logo{
+  .logo {
     width: 175px;
     height: 52px;
     background-size: 174px;
     position: absolute;
   }
-  .nav-btn{
+  .nav-btn {
     display: none;
   }
-  .main-nav li{
+  .main-nav li {
     display: inline-block;
     margin-right: 44px;
   }
-  .main-nav li:last-child{
+  .main-nav li:last-child {
     margin-right: 0;
   }
-  .main-nav a{
+  .main-nav a {
     color: #000000;
     display: inline-block;
     border-bottom: none;
   }
 }
 @media screen and (min-width: 1350px){
-  header{
+  header {
     height: 66px;
   }
 }

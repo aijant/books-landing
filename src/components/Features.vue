@@ -1,5 +1,5 @@
 <template>
-  <div class="Features">
+  <div class="features">
     <div class="container">
       <h4 class="features-title">{{ content.title }}</h4>
       <div class="function">
@@ -37,10 +37,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.features {
+  background-color: #3a454d;
+}
 .container {
   width: 1250px;
   margin: 0 auto;
-   background-color: #3a454d;
 }
 
 .features-title {
@@ -56,11 +58,12 @@ export default {
 
 .function {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .item {
   padding: 15px;
+  width: 383px;
 }
 
 .item:last-child {
@@ -86,27 +89,15 @@ export default {
  }
 }
 
-@media screen and (max-width: 961px){
+@media screen and (max-width: 825px){
   .container {
-    width: 961px; 
+    width: 800px; 
  }
 }
 
-@media screen and (max-width: 790px){
+@media screen and (max-width: 442px){
   .container {
-    width: 764px; 
-  }
-}
-
-@media screen and (max-width: 620px){
-  .container {
-  width: 614px;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .container {
-  width: 500px;
+    width: 419px; 
   }
 }
 

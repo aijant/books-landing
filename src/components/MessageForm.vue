@@ -38,7 +38,6 @@ export default {
   width: 555px;
   height: 400px;
   float: right;
-  margin-top: -214px;
   margin-right: 90px;  
 }
 
@@ -127,14 +126,16 @@ export default {
   cursor: pointer;
 }
 
-@media screen and (max-width: 915px){
- 
-}
-@media screen and (max-width: 780px){
-
-}
-
 @media screen and (max-width: 600px){
+  .messages{
+    flex-wrap: wrap;
+  }
+  .form-textarea {
+    width: 410px;
+  }
+  .form-input {
+    margin-bottom: 16px;
+  }  
+} 
 
-}
 </style>
