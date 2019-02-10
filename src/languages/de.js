@@ -65,7 +65,7 @@ const getWorkContent = () => {
       title: 'lovely work.',
       items: [
         {
-          img:require('../assets/photos/bird.png'), 
+          img:require('../assets/photos/carousel.png'), 
           info:'Easy theme Setup',
          },
         {

@@ -27,7 +27,7 @@ export default {
           icon: 'facebook.png',
          },
         {
-          icon: 'google.png',
+          icon: 'skype.png',
          },
         {
           icon: 'Bechance.png',
@@ -54,7 +54,6 @@ export default {
 }
 
 .container {
-  margin-top: 233px;
   width: 1250px;
   height: 95px;
   }
@@ -74,7 +73,8 @@ export default {
 }
 
 .footer-social {
-  float: right; 
+   width: 801px;
+  padding-top: 16px;
 }
 
 .icon {
@@ -82,4 +82,25 @@ export default {
   padding: 9px;
 }
 
+@media screen and (max-width: 930px){
+ .footer-social {
+  width: 470px;
+ } 
+}
+
+@media screen and (max-width: 760px){
+.footer-social {
+  width: 290px;
+ }
+}
+
+ @media screen and (max-width: 675px){
+.container {
+   width: 600px;
+}
+.footer-text {
+  margin-left: 27px;
+  line-height: 40px;
+} 
+}
 </style>

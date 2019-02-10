@@ -43,6 +43,7 @@ export default {
 <style>
 body {
   margin: 0;
+  min-width: 1250px;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

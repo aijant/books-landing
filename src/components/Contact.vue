@@ -12,8 +12,7 @@
               <p class="maps-text">{{content.info2}}</p>
             </div>
             <MessageForm/>
-          </div> 
-          
+          </div>           
        </div> 
      </div>
    </div>
@@ -70,7 +69,6 @@ export default {
   border-left: 5px solid #e1e6ea;
   color: #292f36;
   font-size: 18px;
-  margin-left: 55px;
   line-height: 42px;
   text-transform: uppercase;
 }
@@ -109,22 +107,33 @@ export default {
 
 @media screen and (max-width: 1058px){
  .container {
-   width: 1230px;
+   width: 1035px;
  } 
+ img {
+  width: 1035px;
+ }
 }
-
 @media screen and (max-width: 630px){
 .container {
-   /* width: 1230px; */
+  width: 610px;
  }
- .maps-text {
-   width: 487px;
+.maps-text {
+  width: 487px;
+ }
+ img {
+  width: 617px;
  }
 }
 
  @media screen and (max-width: 547px){
- .maps-text {
-   width: 380px;
+.container {
+  width: 475px;
+ }
+img {
+  width: 470px;
+}
+.maps-text {
+  width: 380px;
  }
 }
 

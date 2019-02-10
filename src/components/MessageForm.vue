@@ -135,7 +135,11 @@ export default {
   }
   .form-input {
     margin-bottom: 16px;
-  }  
+  } 
+  .form-button {
+    margin-top: 5px;
+    margin-left: 29px;
+  } 
 } 
 
 </style>
