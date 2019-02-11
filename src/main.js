@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 Vue.config.productionTip = false
-Vue.prototype.language = "de"
+Vue.prototype.language = "ru"
 
 new Vue({
   render: h => h(App),

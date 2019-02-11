@@ -9,7 +9,7 @@ const getAboutContent = () => {
   return {
     title: 'Мы скромны.',
     text1 : "Язык цветов – помощник для тех, кто хочет выразить чувство восхищения, уважения, любви, благодарности без слов. Роскошный букет, врученный по случаю или без него, расскажет всё о вашем отношении к адресату.",
-    text2 : "В магазине цветов вам помогут собрать композицию, которая станет <b>идеальным дополнением к любому подарку</b>, приятным знаком внимания для близкого человека. ",
+    text2 : "В магазине цветов вам помогут собрать композицию, которая станет идеальным дополнением к любому подарку, приятным знаком внимания для близкого человека. ",
     facts: [
       {
         number: '01',
@@ -98,19 +98,23 @@ const getServicesContent = () => {
     items: [
       {
         text: 'Букеты невесты',
-        info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+        info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+        icon: 'cogs.png'
       },
       {
         text: 'Корсажи и бутоньерки',
-        info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+        info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+        icon: 'pencil.png'
       },
       {
         text: 'Оформление церемонии',
-        info: 'Вечная красота цветов: потрясающая фотосессия.Самые экстравагантные свадьбы викторианской эпохи.'
+        info: 'Вечная красота цветов: потрясающая фотосессия.Самые экстравагантные свадьбы викторианской эпохи.',
+        icon: 'mobile.png'
       },
       {
         text: 'Сказка для современной принцессы',
-        info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.'
+        info: 'Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.',
+        icon: 'clock.png'
       }               
     ]     
   }
