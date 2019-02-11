@@ -4,9 +4,8 @@
       <div class="footer-block">
         <div class="footer-text">© Copyright 2014 by PSD Booster. All Rights Reserved.</div>
         <div class="footer-social">
-          <a v-for="link in links"
-              class="icon" href="#">
-              <img :src="getIconPath(link.icon)">
+          <a v-for="link in links" class="icon" href="#" :key="link.id">
+            <img :src="getIconPath(link.icon)">
           </a> 
         </div>
       </div>
@@ -22,19 +21,19 @@ export default {
        links: [
         {
           icon: 'linkedin.png',
-         },
+        },
         {
           icon: 'facebook.png',
-         },
+        },
         {
           icon: 'skype.png',
-         },
+        },
         {
           icon: 'Bechance.png',
-         },
+        },
         {
           icon: 'in.png'
-       }
+        }
       ]
     }
   },
@@ -49,58 +48,59 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.footer {
-  background-color: #3a454d;
-}
-
-.container {
-  width: 1250px;
-  height: 95px;
+  .footer {
+    background-color: #3a454d;
   }
 
-.footer-block {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .container {
+    width: 1250px;
+    height: 95px;
+  }
 
-.footer-text {
-  width: 352px;
-  height: 15px;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 90px;
-  margin-left: 73px;
-}
+  .footer-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.footer-social {
-   width: 801px;
-  padding-top: 16px;
-}
+  .footer-text {
+    width: 352px;
+    height: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 90px;
+    margin-left: 73px;
+  }
 
-.icon {
-  line-height: 71px;
-  padding: 9px;
-}
+  .footer-social {
+    width: 801px;
+    padding-top: 16px;
+  }
 
-@media screen and (max-width: 930px){
- .footer-social {
-  width: 470px;
- } 
-}
+  .icon {
+    line-height: 71px;
+    padding: 9px;
+  }
 
-@media screen and (max-width: 760px){
-.footer-social {
-  width: 290px;
- }
-}
+  @media screen and (max-width: 930px){
+    .footer-social {
+      width: 470px;
+    } 
+  }
 
- @media screen and (max-width: 675px){
-.container {
-   width: 600px;
-}
-.footer-text {
-  margin-left: 27px;
-  line-height: 40px;
-} 
-}
+  @media screen and (max-width: 760px){
+    .footer-social {
+      width: 290px;
+    }
+  }
+
+  @media screen and (max-width: 675px){
+    .container {
+      width: 600px;
+    }
+
+    .footer-text {
+      margin-left: 27px;
+      line-height: 40px;
+    } 
+  }
 </style>
