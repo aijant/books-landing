@@ -3,8 +3,8 @@
     <div class="container">
       <h4 class="contact-title">{{ content.title }}</h4>
       <div class="maps">
-        <div class="item" v-for="item in items" :key="item.id">
-          <img :src="item.img" />  
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.945393517229!2d74.62516495060586!3d42.810639979056965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c2a6fd1615%3A0x20d8bf1fd38af6a2!2z0JDQvNC10YDQuNC60LDQvdGB0LrQuNC5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0LIg0KbQtdC90YLRgNCw0LvRjNC90L7QuSDQkNC30LjQuA!5e0!3m2!1sru!2skg!4v1551617227292"  allowfullscreen>
+       </iframe>  
           <div class="maps-block">
             <div class="maps-info">
               <h3 class="maps-overtitle">{{ content.overtitle }}</h3>
@@ -13,8 +13,7 @@
             </div>
             <MessageForm/>
           </div>           
-        </div> 
-      </div>
+         </div>
     </div>
   </div>
 </template>
@@ -33,11 +32,6 @@ export default {
   data(){
     return {
       content: {},       
-        items: [
-        {
-          img:require('../assets/photos/maps.png')      
-        }
-      ]
     }
   },
    methods:{
@@ -54,11 +48,7 @@ export default {
   .container {
     width: 1250px;
     margin: 0 auto;
-  }
-
-  img {
-    width: 1250px;
-  }
+  } 
 
   .contact-title {
     text-align: left;
@@ -68,6 +58,12 @@ export default {
     font-size: 18px;
     line-height: 42px;
     text-transform: uppercase;
+  }
+
+  iframe {
+    width: 1250px;
+    height: 450px;
+    border: 0;
   }
 
   .maps-block {

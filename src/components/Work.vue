@@ -5,7 +5,7 @@
       <h4 class="work-title">{{ content.title }}</h4>
       <div class="photo">
         <div class="item" v-for="item in content.items" :key="item.id">
-          <img :src="item.img" />
+          <img :src="item.img"/>
           <p class="item-info"> {{ item.info }}</p>
         </div>
       </div> 
